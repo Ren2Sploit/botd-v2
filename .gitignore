@@ -1,0 +1,10 @@
+# Project artifacts
+/dist/
+/coverage/
+/dist_dev/
+/node_modules/
+
+# Random excess stuff
+.DS_Store
+.idea/
+.vscode/

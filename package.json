@@ -1,0 +1,54 @@
+{
+  "name": "@fpjs-incubator/botd-agent",
+  "version": "0.1.15",
+  "description": "botd is a browser library for JavaScript bot detection",
+  "keywords": [
+    "bot",
+    "bot detection",
+    "virtual machine",
+    "virtual machine detection",
+    "browser",
+    "search bot",
+    "automation tools",
+    "browser spoofing",
+    "device detection",
+    "privacy"
+  ],
+  "main": "dist/botd.cjs.min.js",
+  "module": "dist/botd.esm.min.js",
+  "types": "dist/botd.d.ts",
+  "license": "MIT",
+  "author": "FingerprintJS, Inc (https://fingerprintjs.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fingerprintjs/botd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fingerprintjs/botd/issues"
+  },
+  "homepage": "https://github.com/fingerprintjs/botd",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:rollup": "rimraf dist && rimraf dist_dev && rollup -c rollup.config.js",
+    "lint": "eslint --ext .js,.ts --ignore-path .gitignore --max-warnings 0 .",
+    "lint:fix": "yarn lint --fix"
+  },
+  "devDependencies": {
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-typescript": "^8.2.1",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.44.0",
+    "rollup-plugin-dts": "^3.0.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.2.0",
+    "typescript": "^4.0.0"
+  }
+}
